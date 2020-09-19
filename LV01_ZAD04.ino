@@ -26,4 +26,4 @@ void loop() {
   delay(2000);
   
   digitalWrite(led2, LOW);
-  }
+}
