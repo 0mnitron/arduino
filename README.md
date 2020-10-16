@@ -75,3 +75,30 @@
     d) kad nije pritisnuto niti jedno tipkalo svijetli samo središnja dioda
 
 <strong>Zadatak 8.</strong> Modificiraj prethodni program tako da pomoću dva tipkala reguliraš svjetlinu jedne LED diode, npr. LED na pinu 3. Jednim tipkalom treba povećavati svjetlinu diode „+“ u, a drugim smanjivati „-“. Kad dioda dođe do maksimalne svjetline, pritiskom na tipku „+“, svjetlina diode se više ne mijenja. Isto tako i kad se dioda ugasi, pritiskom na „-“ ostaje ugašena. Predvidjeti da se svjetlina mijenja u koracima ± 10 ili 20.
+
+<hr>
+
+
+<h1>LV 03 - Očitanje s analognog ulaza i upravljanje zvukom</h1>
+
+**Zadatak 1.** Spoji potenciometar i na Serial monitoru prikazuj očitanu A/D vrijednost.
+
+**Zadatak 2.** Proširi spoj iz prethodnog zadatka dodavanjem LED. Modificiraj program tako da pomoću potenciometra reguliraš svjetlinu LED.
+
+**Zadatak 3.** Proširi spoj iz prethodnog zadatka tako da dodaš tipkalo. Modificiraj program tako da LED svijetli samo kad je pritisnuto tipkalo. Svjetlina LED se i dalje podešava pomoću potenciometra. Stanje tipkala također ispisuj na Serial monitor u istom retku.
+
+**Zadatak 4.** Proširi spoj iz prethodnog zadatka tako da dodaš zujalicu (buzzer). Doradi program tako da se tipkalom osim LED uključuje i zujalica. Frekvencija emitiranog tona treba biti 175 Hz. Svjetlina LED se i dalje podešava pomoću potenciometra.
+
+**Zadatak 5.** Proširi spoj iz prethodnog zadatka dodavanjem još jednog potenciometra na analogni ulaz A1. Doradi program iz prethodnog zadatka tako da novim potenciometrom, mijenjaš frekvenciju zujalice u rasponu od 750 Hz do 2000 Hz. Tipkalom uključuješ samo zujalicu, a LED svijetli cijelo vrijeme. Kad je podešena frekvencija veća od 1500 Hz, potrebno je uključiti crvenu LED. Svjetlinu LED i dalje podešavaš potenciometrom na ulazu A0.
+
+**Zadatak 6.** Na sve pinove s analognim izlazom osim pinova 3 i 11 spoji LED diode. Buzzer iz prethodnog
+zadataka treba odspojiti.
+Napiši program pomoću kojeg ćeš ostvariti trčeće svjetlo. Pomoću potenciometra priključenog na pin A0 reguliraj brzinu 'trčanja' svjetla u intervalu 100 ms do 1000 ms. Pomoću potenciometra priključenog na A1 treba regulirati svjetlinu svih LED dioda koje koristiš, od potpuno ugašene LED diode do maksimalnog osvjetljenja. Pritiskom na tipkalo, trčeće svjetlo ide u suprotnom smjeru.
+
+**Zadatak 7.** Modificiraj program tako da potenciometrom na ulazu A0 simuliraš analogni ulaz u intervalu od 0V do 5V. Koristeći LED diode iz prethodnog zadatke kreirati VU metar. VU metar je instrument koji uključuje određeni broj LED dioda u ovisnosti o ulaznom naponu.
+
+    a) Za ulazni napon od 0,0 – 1,0V ne svijetli niti jedna LED
+    b) Za ulazni napon od 1,0 – 2,0V svijetli LED1
+    c) Za ulazni napon od 2,0 – 3,0V svijetli LED1 i LED2
+    d) Za ulazni napon od 3,0 – 4,0V svijetle LED1, LED2 i LED3
+    e) Za ulazni napon od 4,0 – 5,0V svijetle LED1 – LED4
