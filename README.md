@@ -28,7 +28,19 @@
 
 <strong>Serial.print()</strong> - ispis teksta na Serial monitoru.
 
+<br>
 
+**map(** value, fromLow, fromHigh, toLow, toHigh **)** - funkcija linearno translatira neki broj iz jednog opsega vrijednosti (0-1023) u novi opseg vrijednosti (0-255), (0-100%),...
+```
+value: broj koji se mapira, tj. ulazna varijabla
+fromLow: donja granica sadašnjeg opsega vrijednosti
+fromHigh: gornja granica sadašnjeg opsega vrijednosti
+toLow: donja granica novog opsega vrijednosti
+toHigh: gornja granica novog opsega vrijednosti
+```
+**tone(** pin, frekvencija, trajanje tona **)** - funkcija šalje signal na pin, određene frekvencije i određenog vremenskog trajanja
+
+**tone(** pin, frekvencija **)** - funkcija šalje signal na pin, određene frekvencije, ali neodređenog vremenskog trajanja -> potrebno je koristiti i funkciju **noTone(** pin **)** s kojom prekidamo zvučni signal
 <hr>
 
 
@@ -102,3 +114,9 @@ Napiši program pomoću kojeg ćeš ostvariti trčeće svjetlo. Pomoću potencio
     c) Za ulazni napon od 2,0 – 3,0V svijetli LED1 i LED2
     d) Za ulazni napon od 3,0 – 4,0V svijetle LED1, LED2 i LED3
     e) Za ulazni napon od 4,0 – 5,0V svijetle LED1 – LED4
+
+Potenciometrom na analognom ulazu A1 i dalje i dalje treba regulirati svjetlinu svih LED dioda koje koristiš, od potpuno ugašene LED diode do maksimalnog osvjetljenja. Pritiskom na tipkalo uključuješ sve LED, neovisno o položaju potenciometra. A/D vrijednost, stanje tipkala i izlazne logičke nivoe napone pojedinih dioda prikazati pomoću Serial monitora.
+
+**Zadatak 8.** Koristeći spoj iz prethodnog zadatka, ali koristeći samo jedan potenciometar, doradi program tako da potenciometrom simuliraš temperaturu u granicama 0°C do 60°C. Temperaturu ispisuj na Serial monitoru svake sekunde. Prilikom mjerenja, uređaj treba svake sekunde oglasiti zvučni signal trajanja 20 ms frekvencije 1 kHz. Kad temperatura prijeđe granicu iznad 40°C, uključuje se alarm i crvena LED dioda. U tom slučaju uređaj treba oglasiti zvučni alarm trajanja 500 ms, frekvencije 3 kHz. Na Serial monitor ispisati poruku „Opasnost!“ Zvučni alarm isključiti pritiskom na tipku SW1. Na Serial monitor se i dalje ispisuje poruka „Opasnost!“ sve dok temperatura ne padne u dozvoljeni interval.
+
+**Zadatak 9.** Spoji piezo zujalicu i dva tipkala na Arduino te napiši program kojim će se pritiskom na prvo tipkalo odsvirati glazbena ljestvica. Pronađi na internetu tablicu svih tonova i njihove frekvencije. Pritiskom na drugo tipkalo, Arduino treba odsvirati note tvoje omiljene pjesme. Note također pronađi na internetu. Omogući da se pomoću potenciometra podešava brzina izvođenja melodije.
