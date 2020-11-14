@@ -4,9 +4,9 @@
 
 * [LV02 - Digitalni ulazi i izlazi - tipkala i LED](https://github.com/0mnitron/arduino#lv02---digitalni-ulazi-i-izlazi---tipkala-i-led)
   
-* [LV03 - Očitanje s analognog ulaza i upravljanje zvukom](https://github.com/0mnitron/arduino#lv-03---o%C4%8Ditanje-s-analognog-ulaza-i-upravljanje-zvukom)
+* [LV03 - Očitanje s analognog ulaza i upravljanje zvukom](https://github.com/0mnitron/arduino#lv03---o%C4%8Ditanje-s-analognog-ulaza-i-upravljanje-zvukom)
 
-* [LV04 - Ispis na alfanumerički LCD zaslon](https://github.com/0mnitron/arduino#lv-04---ispis-na-alfanumeri%C4%8Dki-lcd-zaslon)
+* [LV04 - Ispis na alfanumerički LCD zaslon](https://github.com/0mnitron/arduino#lv04---ispis-na-alfanumeri%C4%8Dki-lcd-zaslon)
 
 <hr>
 
