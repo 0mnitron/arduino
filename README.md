@@ -1,3 +1,17 @@
+## Laboratorijske vježbe - zadatci
+  
+* [LV01 - Upravljanje svjetlećim elementima](https://github.com/0mnitron/arduino#lv01---upravljanje-svjetle%C4%87im-elementima)
+
+* [LV02 - Digitalni ulazi i izlazi - tipkala i LED](https://github.com/0mnitron/arduino#lv02---digitalni-ulazi-i-izlazi---tipkala-i-led)
+  
+* [LV03 - Očitanje s analognog ulaza i upravljanje zvukom](https://github.com/0mnitron/arduino#lv-03---o%C4%8Ditanje-s-analognog-ulaza-i-upravljanje-zvukom)
+
+* [LV04 - Ispis na alfanumerički LCD zaslon](https://github.com/0mnitron/arduino#lv-04---ispis-na-alfanumeri%C4%8Dki-lcd-zaslon)
+
+<hr>
+
+<br>
+
 <h1>Naredbe</h1>
 
 <strong>setup()</strong> - izvršava se samo jednom, na početku pokretanja programa i u njoj se postavljaju početni uvjeti - određuje koji će pinovi biti ulazni ili izlazni, inicijalizira se serijska komunikacija, stvaraju objekti za pojedini senzor ...
@@ -94,7 +108,7 @@ toHigh: gornja granica novog opsega vrijednosti
 
 <br>
 
-<h1>LV 03 - Očitanje s analognog ulaza i upravljanje zvukom</h1>
+<h1>LV03 - Očitanje s analognog ulaza i upravljanje zvukom</h1>
 
 **Zadatak 1.** Spoji potenciometar i na Serial monitoru prikazuj očitanu A/D vrijednost.
 
@@ -128,7 +142,7 @@ Potenciometrom na analognom ulazu A1 i dalje i dalje treba regulirati svjetlinu 
 
 <br>
 
-<h1>LV 04 - Ispis na alfanumerički LCD zaslon</h1>
+<h1>LV04 - Ispis na alfanumerički LCD zaslon</h1>
 
 **Zadatak 1.** Spoji LCD zaslon preko I2C sabirnice na Arduino (VCC-5V, SDA-A4, SCL-A5, GND-GND). S adrese https://playground.arduino.cc/Main/I2cScanner preuzmi I2C Scanner. Pomoću njega odredi I2C adresu spojenog LCD zaslona.
 
