@@ -43,6 +43,7 @@ toHigh: gornja granica novog opsega vrijednosti
 **tone(** pin, frekvencija **)** - funkcija šalje signal na pin, određene frekvencije, ali neodređenog vremenskog trajanja -> potrebno je koristiti i funkciju **noTone(** pin **)** s kojom prekidamo zvučni signal
 <hr>
 
+<br>
 
 <h1>LV01 - Upravljanje svjetlećim elementima</h1>
 
@@ -64,6 +65,7 @@ toHigh: gornja granica novog opsega vrijednosti
 
 <hr>
 
+<br>
 
 <h1>LV02 - Digitalni ulazi i izlazi - tipkala i LED</h1>
 
@@ -90,6 +92,7 @@ toHigh: gornja granica novog opsega vrijednosti
 
 <hr>
 
+<br>
 
 <h1>LV 03 - Očitanje s analognog ulaza i upravljanje zvukom</h1>
 
@@ -120,3 +123,29 @@ Potenciometrom na analognom ulazu A1 i dalje i dalje treba regulirati svjetlinu 
 **Zadatak 8.** Koristeći spoj iz prethodnog zadatka, ali koristeći samo jedan potenciometar, doradi program tako da potenciometrom simuliraš temperaturu u granicama 0°C do 60°C. Temperaturu ispisuj na Serial monitoru svake sekunde. Prilikom mjerenja, uređaj treba svake sekunde oglasiti zvučni signal trajanja 20 ms frekvencije 1 kHz. Kad temperatura prijeđe granicu iznad 40°C, uključuje se alarm i crvena LED dioda. U tom slučaju uređaj treba oglasiti zvučni alarm trajanja 500 ms, frekvencije 3 kHz. Na Serial monitor ispisati poruku „Opasnost!“ Zvučni alarm isključiti pritiskom na tipku SW1. Na Serial monitor se i dalje ispisuje poruka „Opasnost!“ sve dok temperatura ne padne u dozvoljeni interval.
 
 **Zadatak 9.** Spoji piezo zujalicu i dva tipkala na Arduino te napiši program kojim će se pritiskom na prvo tipkalo odsvirati glazbena ljestvica. Pronađi na internetu tablicu svih tonova i njihove frekvencije. Pritiskom na drugo tipkalo, Arduino treba odsvirati note tvoje omiljene pjesme. Note također pronađi na internetu. Omogući da se pomoću potenciometra podešava brzina izvođenja melodije.
+
+<hr>
+
+<br>
+
+<h1>LV 04 - Ispis na alfanumerički LCD zaslon</h1>
+
+**Zadatak 1.** Spoji LCD zaslon preko I2C sabirnice na Arduino (VCC-5V, SDA-A4, SCL-A5, GND-GND). S adrese https://playground.arduino.cc/Main/I2cScanner preuzmi I2C Scanner. Pomoću njega odredi I2C adresu spojenog LCD zaslona.
+
+**Zadatak 2.** Ne mijenjajući prethodni spoj, na LCD zaslonu ispiši „Hello world“.
+
+**Zadatak 3.** Proširi kod iz prethodnog zadatka tako da na LCD i u drugi red ispišeš „Hello world“.
+
+**Zadatak 4.** Proširi program iz prethodnog zadatka tako da poruke „Hello world“ trepću svake sekunde.
+
+**Zadatak 5.** Testiraj kako bi na LCD zaslonu, u prvom retku ispisao dekadski broj 1023 u binarnom obliku, a u drugom retku u heksadecimalnom obliku.
+
+**Zadatak 6.** Na LCD zaslonu ispiši „Mi ♥ Arduino“. Riječ „Arduino“ ispiši u drugom retku. Simbol srca treba kreirati kao posebni znak budući da ne postoji u tablici znakova LCD zaslona. Kodove za kreiranje simbola srca moguće je provjeriti na http://maxpromer.github.io/LCD- Character-Creator/ ili sličnoj.
+
+**Zadatak 7.** Na LCD zaslonu, u prvom retku, ispiši: "šareno lišće".
+
+**Zadatak 8.** Proširi spoj dodavanjem potenciometra na pin A0. Napiši program koji će u prvom retku, u lijevom kutu ispisivati očitanu A/D vrijednost.
+
+**Zadatak 9.** Proširi program tako da izračunatu vrijednost napona ispisuješ u gornjem redu u desnom kutu. A/D vrijednost 0 odgovara 0V, a 1023 odgovara naponu 5V. Za računanje vrijednosti napona koristiti funkciju map().
+
+**Zadatak 10.** Proširi program tako da stanje baterije vizualno prikazuješ pomoću simbola napunjenosti baterije. U tu svrhu potrebno je kreirati 7 simbola za bateriju. U donjem retku ispisati tekst BATTERY i na temelju A/D vrijednosti iz potenciometra, tj. ulaznog napona, simulirati stanje napunjenosti baterije (punu bateriju prikazat sa svih sedam simbola).
