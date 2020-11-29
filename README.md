@@ -8,7 +8,7 @@
 
 * [LV04 - Ispis na alfanumerički LCD zaslon](https://github.com/0mnitron/arduino#lv04---ispis-na-alfanumeri%C4%8Dki-lcd-zaslon)
 
-* [LV05 - Uvježbavanje zadataka](https://github.com/0mnitron/arduino#lv05---uvje%c5%beavanje-zadataka)
+* [LV05 - Uvježbavanje zadataka](https://github.com/0mnitron/arduino#lv05---uvje%C5%BEbavanje-zadataka)
 
 <hr>
 
