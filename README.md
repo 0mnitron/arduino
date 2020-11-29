@@ -8,6 +8,8 @@
 
 * [LV04 - Ispis na alfanumerički LCD zaslon](https://github.com/0mnitron/arduino#lv04---ispis-na-alfanumeri%C4%8Dki-lcd-zaslon)
 
+* [LV05 - Uvježbavanje zadataka](https://github.com/0mnitron/arduino#lv05---uvje%c5%beavanje-zadataka)
+
 <hr>
 
 <br>
@@ -204,6 +206,24 @@ Potenciometrom na analognom ulazu A1 i dalje i dalje treba regulirati svjetlinu 
 **Zadatak 9.** Proširi program tako da izračunatu vrijednost napona ispisuješ u gornjem redu u desnom kutu. A/D vrijednost 0 odgovara 0V, a 1023 odgovara naponu 5V. Za računanje vrijednosti napona koristiti funkciju map().
 
 **Zadatak 10.** Proširi program tako da stanje baterije vizualno prikazuješ pomoću simbola napunjenosti baterije. U tu svrhu potrebno je kreirati 7 simbola za bateriju. U donjem retku ispisati tekst BATTERY i na temelju A/D vrijednosti iz potenciometra, tj. ulaznog napona, simulirati stanje napunjenosti baterije (punu bateriju prikazat sa svih sedam simbola).
+
+<hr>
+
+<br>
+
+<h1>LV05 - Uvježbavanje zadataka</h1>
+
+**Zadatak 1.** Pomoću Arduina simuliraj 3 ulazni AND sklop. Za ulaze A, B i C koristi tipkala spojena na slijedeće pinove: 2, 3, 4. Za izlaz Y spojiti LED diodu na pin 8. Na pin 9 spojiti LED diodu koja će pokazivati invertirani izlaz -Y.
+
+**Zadatak 2.** Za svaki ulaz A, B i C dodati LED diodu kao indikator da je tipka pritisnuta (npr. zelenu LED). Koristiti pinove 5, 6 i 7. Izlaze Y i –Y prikazati LED diodama druge boje (npr. crvena LED).
+
+**Zadatak 3.** Doradi program tako da na Serial monitoru ispisuješ sve ulazne i izlazne varijable u tablici u obliku: A=0 B=0 C=1 Y=1 –Y=0. Potrebno je koristiti tabulator za odjeljivanje stupaca. Za prikaz na Serial monitor koristiti pozitivnu logiku: pritisnuta tipka = 1!
+
+**Zadatak 4.** Doradi spoj iz prethodnog zadatka dodavanjem LCD-a. Adresa LCD-a je ili 0x27 ili 0x3F. Doradi program tako da u prvom redu LCD-a ispisuje zaglavlje tablice: A B C Y -Y, na pozicijama 0, 3, 6, 11, 15. U drugom retku ispisuj vrijednosti izlaznih i ulaznih varijabli. Koristiti biblioteke „Wire.h“ i „LiquidCrystal_I2C.h“. Za prikaz na LCD, kao i kod Serial monitora, treba koristiti pozitivnu logiku: pritisnuta tipka = 1!
+
+**Zadatak 5.** Doradi spoj dodavanjem potenciometra. Doradi program tako da pomoću potenciometra reguliraš svjetlinu svih LED dioda! Po potrebi, zamijeni pinove na koju su spojene LED diode. Ne koristiti pin 3 koji treba ostati slobodan.
+
+**Zadatak 6.** Doradi spoj iz prethodnog zadatka dodavanjem piezo zujalice na pin 10. Program doradi tako da se kod svake promjene izlazne varijable Y oglasi zvučni signal frekvencije 3 kHz trajanja 500 ms. Dodatno, doradi program tako da se prilikom pritiska ili otpuštanja tipke, oglasi kratki zvučni signal frekvencije 1 kHz, trajanja 20 ms.
 
 <hr>
 
