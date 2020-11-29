@@ -52,9 +52,50 @@ fromHigh: gornja granica sadašnjeg opsega vrijednosti
 toLow: donja granica novog opsega vrijednosti
 toHigh: gornja granica novog opsega vrijednosti
 ```
+### Buzzer
+
 **tone(** pin, frekvencija, trajanje tona **)** - funkcija šalje signal na pin, određene frekvencije i određenog vremenskog trajanja
 
 **tone(** pin, frekvencija **)** - funkcija šalje signal na pin, određene frekvencije, ali neodređenog vremenskog trajanja -> potrebno je koristiti i funkciju **noTone(** pin **)** s kojom prekidamo zvučni signal
+
+### LCD
+
+[Određivanje I2C adrese LCD zaslona](https://github.com/0mnitron/arduino/blob/master/LV04_ZAD01.ino)
+
+libraries
+```C
+<Wire.h> - sadrži funkcije za I2C komunikaciju
+<LiquidCrystal_I2C.h> - sadrži funkcije za LCD s I2C komunikacijom
+```
+**LiquidCrystal_I2C lcd(** 0x27, 16, 2 **);**  - definiranje I2C adrese LCD‐a (0x27) **{** ili 0x3F **}** i veličine LCD‐a 16 znakova u 2 retka
+
+**lcd.begin()** - inicijaliziranje LCD‐a
+
+**lcd.backlight()** - uključivanje pozadinskog osvjetljenja LCD‐a
+
+**lcd.noBacklight()** - isključivanje pozadinskog osvjetljenja LCD‐a
+
+**lcd.setCursor(** 0, 0 **)** - postavljanje kursora na lokaciju 0,0 (**stupac**, **redak**)
+
+**lcd.print()** - ispisivanje poruke
+```C
+int br = 1023;
+lcd.print(br, BIN);  // Ispisivanje broja u binarnom obliku 
+lcd.print(br, HEX);  // Ispisivanje broja u heksadekadskom obliku
+```
+
+**lcd.clear()** - brisanje zaslona
+
+_simboli_  ->
+
+  * uint8_t heart[8] = { 0x0, 0xa, 0x1f, 0x1f, 0xe, 0x4, 0x0 }; - kreiranje simbola
+
+  * **lcd.createChar(** 1, heart **);** - pozivanje simbola
+
+  * **lcd.home();**
+
+  * **lcd.write(** 1 **);** - ispisivanje simbola
+
 <hr>
 
 <br>
@@ -163,3 +204,11 @@ Potenciometrom na analognom ulazu A1 i dalje i dalje treba regulirati svjetlinu 
 **Zadatak 9.** Proširi program tako da izračunatu vrijednost napona ispisuješ u gornjem redu u desnom kutu. A/D vrijednost 0 odgovara 0V, a 1023 odgovara naponu 5V. Za računanje vrijednosti napona koristiti funkciju map().
 
 **Zadatak 10.** Proširi program tako da stanje baterije vizualno prikazuješ pomoću simbola napunjenosti baterije. U tu svrhu potrebno je kreirati 7 simbola za bateriju. U donjem retku ispisati tekst BATTERY i na temelju A/D vrijednosti iz potenciometra, tj. ulaznog napona, simulirati stanje napunjenosti baterije (punu bateriju prikazat sa svih sedam simbola).
+
+<hr>
+
+<br>
+
+<h1>LV15 - Mjerenje temperature i vlage</h1>
+
+**Zadatak 1.** Spoji senzor (A0, 3.3V, GND) i ispisuj temperaturu i vlagu na Serial monitor svake 2 sekunde.
