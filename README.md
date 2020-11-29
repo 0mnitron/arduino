@@ -91,6 +91,8 @@ lcd.print(br, HEX);  // Ispisivanje broja u heksadekadskom obliku
 _simboli_  ->
 
   * uint8_t heart[8] = { 0x0, 0xa, 0x1f, 0x1f, 0xe, 0x4, 0x0 }; - kreiranje simbola
+  
+    * [uint8_t](https://en.cppreference.com/w/c/types/integer)  - unsigned integer type with width of exactly 8 bits
 
   * **lcd.createChar(** 1, heart **);** - pozivanje simbola
 
