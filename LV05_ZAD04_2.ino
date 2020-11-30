@@ -81,18 +81,18 @@ void loop() {
   
   if(button_A==0 && button_B==0 && button_C==0){
     lcd.setCursor(11, 1);
-  	lcd.print("1");
+    lcd.print("1");
     lcd.setCursor(15, 1);
-  	lcd.print("0");
+    lcd.print("0");
     
     digitalWrite(pin_ledY, HIGH);
     digitalWrite(pin_led_Y, LOW);  
   }
   else{
     lcd.setCursor(11, 1);
-  	lcd.print("0");
+    lcd.print("0");
     lcd.setCursor(15, 1);
-  	lcd.print("1");
+    lcd.print("1");
     
     digitalWrite(pin_ledY, LOW);
     digitalWrite(pin_led_Y, HIGH);
