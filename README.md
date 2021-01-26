@@ -10,6 +10,8 @@
 
 * [LV05 - Uvježbavanje zadataka](https://github.com/0mnitron/arduino#lv05---uvje%C5%BEbavanje-zadataka)
 
+* [LV06 - Ispitna vježba](https://github.com/0mnitron/arduino#lv06---ispitna-vje%C5%BEba)
+
 <hr>
 
 <br>
