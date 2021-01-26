@@ -231,6 +231,20 @@ Potenciometrom na analognom ulazu A1 i dalje i dalje treba regulirati svjetlinu 
 
 <br>
 
+<h1>LV06 - Ispitna vježba</h1>
+
+**Zadatak 1.** Spoji 3 LED diode na izlazne portove Arduino pločice. Napiši program kojim ćeš simulirati trčeće svjetlo. Trajanje svijetljenja diode je 500 ms. Dodaj jedno tipkalo tako da dok je pritisnuto, diode trče u suprotnom smjeru.
+
+**Zadatak 2.** Doradi spoj i program tako da brzinu treptanja reguliraš potenciometrom i to tako da je najkraće vrijeme 100 ms, a najdulje 1 sekunda. Doradi program tako da na Serial monitoru ispisuješ: "Ocitana A/D vrijednost: AAAA   Trajanje intervala: BBBB ms".
+
+**Zadatak 3.** Doradi spoj iz prethodnog zadatka dodavanjem LCD-a. Doradi program tako da u prvom redu LCD-a ispisuje tvoje prezime i trajanje intervala u ms. Koristiti biblioteke "Wire.h" i "LiquidCrystal_I2C.h".
+
+**Zadatak 4.** Doradi program tako da u drugom redu LCD-a ispisuje ukupni broj pajenja svih dioda u jednom i u drugom smjeru.
+
+<hr>
+
+<br>
+
 <h1>LV15 - Mjerenje temperature i vlage</h1>
 
 **Zadatak 1.** Spoji senzor (A0, 3.3V, GND) i ispisuj temperaturu i vlagu na Serial monitor svake 2 sekunde.
