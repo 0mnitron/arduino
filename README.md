@@ -12,6 +12,10 @@
 
 * [LV06 - Ispitna vježba](https://github.com/0mnitron/arduino#lv06---ispitna-vje%C5%BEba)
 
+* [LV07 - Sedam segmentni LED indikator]()
+
+* [LV08 - 4x7 segmentni LED indikator](https://github.com/0mnitron/arduino#lv08---4x7-segmentni-led-indikator)
+
 <hr>
 
 <br>
@@ -247,6 +251,24 @@ Potenciometrom na analognom ulazu A1 i dalje i dalje treba regulirati svjetlinu 
 
 <br>
 
+<h1>LV07 - Sedam segmentni LED indikator</h1>
+
+**Zadatak 1.** Spoji 7-segmentni LED indikator i napiši program kojim će se na indikatoru odbrojavati od 0 do 9.
+
+**Zadatak 2.** Doradi program iz prethodnog zadatka tako da slijedno prikazuje slova od A do F.
+
+**Zadatak 3.** Napisati program kojim će na 7-segmentni LED indikator ispisivati „PULA“.
+
+**Zadatak 5.** Modificiraj program iz 1. zadatka gdje 7-segmentni LED indikator odbrojava od 0 do 9 tako da umjesto naredbi digitalWrite() i pinMode(), koristiš direktno adresiranje porta D. Potrebno je modificirati spoj tako da signalne vodiče za segmente A – H premjestiš za dva pina udesno tako da kreću od pina 0, umjesto pina 2 Arduina.
+
+**Zadatak 6.** Doradi program iz prethodnog zadatka tako da slijedno prikazuje slova od A do F.
+
+**Zadatak 7.** Napisati program kojim će na 7-segmentnom LED indikatoru ispisivati „PULA“.
+
+<hr>
+
+<br>
+
 <h1>LV08 - 4x7 segmentni LED indikator</h1>
 
 *Budući da prilikom učitavanja programa na Arduino UNO pločicu pin 0 koristi kao RX i pin 1 kao TX, potrebno je privremeno odspojiti vodič RX sa Arduina. U suprotnom program se neće moći učitati na Arduino.*
@@ -265,6 +287,12 @@ Umjesto 8 naredbi pinMode(), koristiti direktno adresiranje registara naredbom D
 **Zadatak 6.** Prethodni zadatak modificiraj tako da dodaš potenciometar na ulaz A0 Arduina pomoću kojeg ćeš regulirati brzinu ispisa slova. Brzinu ispisa treba regulirati u granicama 1 ms do 250 ms.
 
 **Zadatak 7.** Modificiraj kod iz prethodnog zadatka tako da u potpunosti izbaciš ugrađene Arduno naredbe: pinMode() i digitalWrite(). Odnosi se i na pinove 8, 9, 10 i 11 Arduina kojima se upravlja pojedinom znamenkom. Koristiti naredbu PORTB = bxxxxxxxxx.
+
+**Zadatak 8.** Modificiraj program iz prethodnog zadatka tako da na 4x7 segmentnom zaslonu ispisuješ očitanu A/D vrijednost potenciometra priključenog na A0 ulaz. Prati stanje znamenki na Serial monitoru.
+
+**Zadatak 9.** Modificiraj spoj iz prethodnog zadatka tako da dodaš dva tipkala. Modificiraj program tako da pritiskom na jednu tipku povećavaš broj prikazan na 4x7 segmentnom indikatoru, a pritiskom na drugu tipku smanjuješ. Inicijalno, na indikatoru treba napisati broj 500.
+
+**Zadatak 10.** Modificiraj kod tako da se brojanje povećava ili smanjuje samo na pritisak tipke i da ne broji dalje dok je tipka pritisnuta. Dakle samo na promjenu.
 
 <hr>
 
