@@ -247,6 +247,29 @@ Potenciometrom na analognom ulazu A1 i dalje i dalje treba regulirati svjetlinu 
 
 <br>
 
+<h1>LV08 - 4x7 segmentni LED indikator</h1>
+
+*Budući da prilikom učitavanja programa na Arduino UNO pločicu pin 0 koristi kao RX i pin 1 kao TX, potrebno je privremeno odspojiti vodič RX sa Arduina. U suprotnom program se neće moći učitati na Arduino.*
+
+**Zadatak 1.** Spoji 4 X 7 segmentni LED indikator. Napiši program koji će napisati slovo P na poziciji prve znamenke s lijeve strane (D1). Pinovi 0 – 7 upravljaju pojedinim segmentom kao i u prethodnoj vježbi, a pinovi 8-11 upravljaju zajedničkim katodama, tj. koja od 4 znamenke svijetli.
+
+**Zadatak 2.** Doradi program tako da slovo P trepće na poziciji D1 s intervalom 500 ms.
+
+**Zadatak 3.** Doradi program tako da se slovo P ispisuje na poziciju D1 kao i do sada, a zatim isto slovo P na poziciji D2. Obje znamenke se trebaju ispisivati naizmjence u intervalu 500 ms.
+Umjesto 8 naredbi pinMode(), koristiti direktno adresiranje registara naredbom DDRD=b111111111 i DDRB = B11111111.
+
+**Zadatak 4.** Doradi prethodni program tako da na poziciji znamenke D2 umjesto slova P ispisuješ slovo U. Sada bi se trebale naizmjence ispisivati slovo P na poziciju D1 i slovo U na poziciji D2.
+
+**Zadatak 5.** Doradi prethodni program tako da na poziciju D3 pišeš slovo „L“ i na poziciju D4 slovo „A“. Sada bi se trebala naizmjence ispisivati slova P U L A.
+
+**Zadatak 6.** Prethodni zadatak modificiraj tako da dodaš potenciometar na ulaz A0 Arduina pomoću kojeg ćeš regulirati brzinu ispisa slova. Brzinu ispisa treba regulirati u granicama 1 ms do 250 ms.
+
+**Zadatak 7.** Modificiraj kod iz prethodnog zadatka tako da u potpunosti izbaciš ugrađene Arduno naredbe: pinMode() i digitalWrite(). Odnosi se i na pinove 8, 9, 10 i 11 Arduina kojima se upravlja pojedinom znamenkom. Koristiti naredbu PORTB = bxxxxxxxxx.
+
+<hr>
+
+<br>
+
 <h1>LV15 - Mjerenje temperature i vlage</h1>
 
 **Zadatak 1.** Spoji senzor (A0, 3.3V, GND) i ispisuj temperaturu i vlagu na Serial monitor svake 2 sekunde.
