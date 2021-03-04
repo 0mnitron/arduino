@@ -301,3 +301,17 @@ Umjesto 8 naredbi pinMode(), koristiti direktno adresiranje registara naredbom D
 <h1>LV15 - Mjerenje temperature i vlage</h1>
 
 **Zadatak 1.** Spoji senzor (A0, 3.3V, GND) i ispisuj temperaturu i vlagu na Serial monitor svake 2 sekunde.
+
+<br>
+
+<br>
+
+<br>
+
+<hr>
+
+Vježbe osmislio: 
+
+Zoran Dumančić, mag. ing. el.
+
+<hr>
