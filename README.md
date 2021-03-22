@@ -16,9 +16,9 @@
 
 * [LV08 - 4x7 segmentni LED indikator](https://github.com/0mnitron/arduino#lv08---4x7-segmentni-led-indikator)
 
-* [LV09 - DC i Servo motori]()
+* [LV09 - DC i Servo motori](https://github.com/0mnitron/arduino#lv09---dc-i-servo-motori)
 
-* [LV10 - 4x4 matrična tipkovnica i relej]()
+* [LV10 - 4x4 matrična tipkovnica i relej](https://github.com/0mnitron/arduino#lv10---4x4-matri%C4%8Dna-tipkovnica-i-relej)
 
 <hr>
 
@@ -316,19 +316,20 @@ Umjesto 8 naredbi pinMode(), koristiti direktno adresiranje registara naredbom D
 
 **Zadatak 8.** Napiši program za pokretanje servo motora:
 
-    a) pritiskom na SW1, motor se treba okretati ulijevo i na LCD-u ispisati poruku "<--Moving Left". 
-       Kad se tipkalo otpusti, motor treba stati.
-    b) Pritiskom na SW2 motor se treba okretati udesno i na LCD-u ispisati poruku "Moving Right-->>". 
-       Kad se tipkalo otpusti, motor treba stati.
-    c) Kad nije pritisnuta niti jedna tipka, na LCD-u treba ispisati poruku: „Ready“, a servo ne mijenja položaj
+    a) pritiskom na SW1, motor se treba okretati ulijevo i na LCD-u ispisati poruku 
+       "<--Moving Left". Kad se tipkalo otpusti, motor treba stati.
+    b) Pritiskom na SW2 motor se treba okretati udesno i na LCD-u ispisati poruku 
+       "Moving Right-->>". Kad se tipkalo otpusti, motor treba stati.
+    c) Kad nije pritisnuta niti jedna tipka, na LCD-u treba ispisati poruku: „Ready“, 
+       a servo ne mijenja položaj
     
 **Zadatak 9.** Doradi program sa slijedećim:
 
-    a) Na LCD-u u drugom retku treba ispisati kut u stupnjevima. I dok se motor pozicionira, i kad motor stoji, i 
-       kad je u krajnjem položaju.
+    a) Na LCD-u u drugom retku treba ispisati kut u stupnjevima. I dok se motor pozicionira, i kad 
+       motor stoji, i kad je u krajnjem položaju.
     b) Kad dosegne krajnji položaj, treba ispisati poruku „Left limit“ ili „Right limit“ na LCD-u.
-    c) Pritiskom na obje tipke istovremeno, treba ispisati poruku „Resetting pos.“, a servo motor se treba 
-       pozicionirati u središnji položaj. U središnjem položaju treba pisati„Ready“.
+    c) Pritiskom na obje tipke istovremeno, treba ispisati poruku „Resetting pos.“, a servo motor 
+       se treba pozicionirati u središnji položaj. U središnjem položaju treba pisati„Ready“.
 
 <hr>
 
