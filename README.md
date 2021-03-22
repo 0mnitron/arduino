@@ -12,9 +12,13 @@
 
 * [LV06 - Ispitna vježba](https://github.com/0mnitron/arduino#lv06---ispitna-vje%C5%BEba)
 
-* [LV07 - Sedam segmentni LED indikator]()
+* [LV07 - Sedam segmentni LED indikator](https://github.com/0mnitron/arduino#lv07---sedam-segmentni-led-indikator)
 
 * [LV08 - 4x7 segmentni LED indikator](https://github.com/0mnitron/arduino#lv08---4x7-segmentni-led-indikator)
+
+* [LV09 - DC i Servo motori]()
+
+* [LV10 - 4x4 matrična tipkovnica i relej]()
 
 <hr>
 
@@ -298,6 +302,45 @@ Umjesto 8 naredbi pinMode(), koristiti direktno adresiranje registara naredbom D
 
 <br>
 
+<h1>LV09 - DC i Servo motori</h1>
+
+**Zadatak 2.** Za spoj prema prethodnom zadatku, napiši program pomoću kojeg će se DC motor okretati od najmanje do najveće brzine i obratno.
+
+**Zadatak 3.** Proširi spoj dodavanjem još jednog tipkala i doradi program tako da se držanjem tipkala SW1 brzina povećava, a držanjem tipke SW2 smanjuje. Kad nije pritisnuto niti jedno tipkalo, brzina se ne mijenja. Varijablu koja se koristi za određivanje brzine (npr. int nSpeed) ograničiti u granicama minimalno 0 i maksimalno 255.
+
+**Zadatak 4.** Napiši program koji će upravljati brzinom vrtnje motora u ovisnosti o položaju potenciometra. Motor se treba okretati samo kad su pritisnuta oba tipkala.
+
+**Zadatak 6.** Umjesto DC motora spoji servo motor. Napiši program koji će zakretati servo motor od 0 do 180 stupnjeva. 
+
+**Zadatak 7.** Doradi program iz prethodnog zadatka tako da položaj servo motora podešavaš pomoću potenciometra. Koristiti već poznatu funkciju map().
+
+**Zadatak 8.** Napiši program za pokretanje servo motora:
+
+    a) pritiskom na SW1, motor se treba okretati ulijevo i na LCD-u ispisati poruku "<--Moving Left". 
+       Kad se tipkalo otpusti, motor treba stati.
+    b) Pritiskom na SW2 motor se treba okretati udesno i na LCD-u ispisati poruku "Moving Right-->>". 
+       Kad se tipkalo otpusti, motor treba stati.
+    c) Kad nije pritisnuta niti jedna tipka, na LCD-u treba ispisati poruku: „Ready“, a servo ne mijenja položaj
+    
+**Zadatak 9.** Doradi program sa slijedećim:
+
+    a) Na LCD-u u drugom retku treba ispisati kut u stupnjevima. I dok se motor pozicionira, i kad motor stoji, i 
+       kad je u krajnjem položaju.
+    b) Kad dosegne krajnji položaj, treba ispisati poruku „Left limit“ ili „Right limit“ na LCD-u.
+    c) Pritiskom na obje tipke istovremeno, treba ispisati poruku „Resetting pos.“, a servo motor se treba 
+       pozicionirati u središnji položaj. U središnjem položaju treba pisati„Ready“.
+
+<hr>
+
+<br>
+
+<h1>LV10 - 4x4 matrična tipkovnica i relej</h1>
+
+
+<hr>
+
+<br>
+
 <h1>LV15 - Mjerenje temperature i vlage</h1>
 
 **Zadatak 1.** Spoji senzor (A0, 3.3V, GND) i ispisuj temperaturu i vlagu na Serial monitor svake 2 sekunde.
@@ -307,6 +350,8 @@ Umjesto 8 naredbi pinMode(), koristiti direktno adresiranje registara naredbom D
 <br>
 
 <br>
+
+* [TOP](https://github.com/0mnitron/arduino#laboratorijske-vje%C5%BEbe---zadatci)
 
 <hr>
 
