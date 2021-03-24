@@ -1,24 +1,24 @@
 ## Laboratorijske vježbe - zadatci
   
-* [LV01 - Upravljanje svjetlećim elementima](https://github.com/0mnitron/arduino#lv01---upravljanje-svjetle%C4%87im-elementima)
+* [LV01 - Upravljanje svjetlećim elementima](#lv01---upravljanje-svjetle%C4%87im-elementima)
 
-* [LV02 - Digitalni ulazi i izlazi - tipkala i LED](https://github.com/0mnitron/arduino#lv02---digitalni-ulazi-i-izlazi---tipkala-i-led)
+* [LV02 - Digitalni ulazi i izlazi - tipkala i LED](#lv02---digitalni-ulazi-i-izlazi---tipkala-i-led)
   
-* [LV03 - Očitanje s analognog ulaza i upravljanje zvukom](https://github.com/0mnitron/arduino#lv03---o%C4%8Ditanje-s-analognog-ulaza-i-upravljanje-zvukom)
+* [LV03 - Očitanje s analognog ulaza i upravljanje zvukom](#lv03---o%C4%8Ditanje-s-analognog-ulaza-i-upravljanje-zvukom)
 
-* [LV04 - Ispis na alfanumerički LCD zaslon](https://github.com/0mnitron/arduino#lv04---ispis-na-alfanumeri%C4%8Dki-lcd-zaslon)
+* [LV04 - Ispis na alfanumerički LCD zaslon](#lv04---ispis-na-alfanumeri%C4%8Dki-lcd-zaslon)
 
-* [LV05 - Uvježbavanje zadataka](https://github.com/0mnitron/arduino#lv05---uvje%C5%BEbavanje-zadataka)
+* [LV05 - Uvježbavanje zadataka](#lv05---uvje%C5%BEbavanje-zadataka)
 
-* [LV06 - Ispitna vježba](https://github.com/0mnitron/arduino#lv06---ispitna-vje%C5%BEba)
+* [LV06 - Ispitna vježba](#lv06---ispitna-vje%C5%BEba)
 
-* [LV07 - Sedam segmentni LED indikator](https://github.com/0mnitron/arduino#lv07---sedam-segmentni-led-indikator)
+* [LV07 - Sedam segmentni LED indikator](#lv07---sedam-segmentni-led-indikator)
 
-* [LV08 - 4x7 segmentni LED indikator](https://github.com/0mnitron/arduino#lv08---4x7-segmentni-led-indikator)
+* [LV08 - 4x7 segmentni LED indikator](#lv08---4x7-segmentni-led-indikator)
 
-* [LV09 - DC i Servo motori](https://github.com/0mnitron/arduino#lv09---dc-i-servo-motori)
+* [LV09 - DC i Servo motori](#lv09---dc-i-servo-motori)
 
-* [LV10 - 4x4 matrična tipkovnica i relej](https://github.com/0mnitron/arduino#lv10---4x4-matri%C4%8Dna-tipkovnica-i-relej)
+* [LV10 - 4x4 matrična tipkovnica i relej](#lv10---4x4-matri%C4%8Dna-tipkovnica-i-relej)
 
 <hr>
 
