@@ -16,30 +16,30 @@ void setup() {
 }
 
 bool state = LOW;
-bool on;
 
 void loop() {
   for(int i=0; i<=9; i++){
-      lcd.setCursor(0, 1);
-      lcd.print(i);
-      delay(2000);
+    lcd.setCursor(0, 1);
+    lcd.print(i);
+    delay(2000);
   }
+  
   if(digitalRead(pin_sw1) == 0){
     led_on();
-    on = true;
   }
   if(digitalRead(pin_sw2) == 0){
     led_off();
-    on = false;
   }
+  
   digitalWrite(pin_LED, state);
-  lcd.clear();
-  if(on){
+
+  
+  if(state){
     lcd.setCursor(0, 0);
     lcd.print("HIGH");
   }else{
     lcd.setCursor(0, 0);
-    lcd.print("LOW");
+    lcd.print("LOW ");
   }
 }
 
