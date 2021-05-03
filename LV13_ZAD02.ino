@@ -16,25 +16,23 @@ void setup() {
 }
 
 bool state = LOW;
-bool on;
 
 void loop() {
   if(digitalRead(pin_sw1) == 0){
     led_on();
-    on = true;
   }
   if(digitalRead(pin_sw2) == 0){
     led_off();
-    on = false;
   }
+  
   digitalWrite(pin_LED, state);
-  lcd.clear();
-  if(on){
+  
+  if(state){
     lcd.setCursor(0, 0);
     lcd.print("HIGH");
   }else{
     lcd.setCursor(0, 0);
-    lcd.print("LOW");
+    lcd.print("LOW ");
   }
 }
 
